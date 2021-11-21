@@ -1,0 +1,365 @@
+*{margin: 0; padding: 0;} 
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.wapper{
+    width: 100%;
+    height: 5000px;
+    background: #000;
+
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(
+180deg
+,#0c0c0c 20%,rgba(12,12,12,.8) 65%,rgba(12,12,12,0));
+    display: flex;
+    
+}
+.header .logo img{
+   padding-left: 20px;
+}
+.menu{
+    width: 100%;
+    padding-left: 50px;
+    height: 70px;
+    line-height: 70px;
+    display: flex;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+    padding: 0 15px;
+}
+.menu ul li a{
+    color: var(--text-color);
+}
+.menu ul li i{
+    color: var(--text-color);
+}
+.search_user{
+   
+    margin-left: 10px;
+    display: flex;
+    
+    height: 72px;
+    
+    
+    
+}
+.search_user i{
+    cursor: pointer;
+}
+.search{
+    
+    width: 200px;
+    height: 70px;
+    padding: 0;
+    display: flex;
+    
+    
+}
+.search input{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+   
+}
+.search img{
+   
+}
+
+.user{
+    display: flex;
+    margin-left: 40px;
+    width: 200px;
+    height: 70px;
+}
+.menu ul{
+    position: relative;
+}
+.menu .phimle1,
+.menu .phimbo1,
+.menu .quocgia1,
+.menu .theloai1{
+    font-weight: bold;
+}
+
+.menu-nho .nav_old,
+.menu-nho1 .nav_old,
+.menu-nho2 .nav_old,
+.menu-nho3 .nav_old{
+    position: absolute;
+    width: 700px;
+    line-height: 30px;
+    background-color: #0c0c0c;
+    border-radius: 5px;
+    left: -16px;
+    top:60px;
+      
+}
+.menu-nho .nav_old::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    
+    
+}
+.menu-nho1 .nav_old::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 29%;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+}
+.menu-nho2 .nav_old::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 49%;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+}
+.menu-nho3 .nav_old::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 69%;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+}
+.menu-nho,.menu-nho1,.menu-nho2,.menu-nho3{
+   visibility: hidden;
+}
+.menu .phimle:hover .menu-nho,
+.menu .phimbo:hover .menu-nho1,
+.menu .quocgia:hover .menu-nho2,
+.menu .theloai:hover .menu-nho3{
+   visibility: visible;
+    transition: 0.4s;
+}
+.menu .phimle:hover .phimle1,
+.menu .phimbo:hover .phimbo1,
+.menu .quocgia:hover .quocgia1,
+.menu .theloai:hover .theloai1{
+    background: var(--yellow-color);
+    color: black;
+    text-decoration: none;
+}
+.phimle1,.phimbo1,.quocgia1,.theloai1{
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+.nav_old li a:hover{
+    text-decoration: none;
+    color:var(--yellow-color) ;
+    font-size:medium;
+    transition: 0.3;
+}
+/* hết menu */
+.noidung{
+    width: 100%;
+    
+}
+.text{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+.text h4{
+    text-transform: uppercase;
+    
+}
+.text a{
+    text-decoration: none;
+}
+.text h4{
+    font-size: 40px;
+    color: var(--white-color);
+}
+.text h5{
+    color: #febb00;
+    background: linear-gradient(
+        90deg
+        ,rgba(254,187,0,.6),rgba(254,187,0,0));
+     font-size: 2vw;
+     font-weight: bold;
+     width: 100%;
+     padding: 0.5vw 1vw;
+}
+/* hết slide */
+
+.content{
+    width: 100%;
+    height: 100%;
+    background: #0c0c0c;
+}
+.phimchieurap{
+    width: 100%;
+    height: 750px;
+    background: #0c0c0c;
+}
+.phimchieurap-left{
+    width: 100%;
+}
+.phimchieurap_title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+.phimchieurap_title .title{
+    display: block;
+    font-size: 20px;
+    color: #febb00;
+    font-weight: bold;
+}
+.phimchieurap_title .title::after{
+    content: "";
+    left: 15px;
+    width: 70px;
+    top: 25px;
+    height: 3.5px;
+    position: absolute;
+    background-color: var(--yellow-color);
+    border-radius: 3px;
+}
+.phimchieurap_title .xemthem{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+.phimchieurap_title .xemthem:hover{
+    color: #febb00;
+    font-weight: bold;
+}
+.phimlist{
+    width: 100%;
+}
+.phim-item{
+    width: 100%;
+}
+.phim-icon{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: var(--yellow-color);
+    text-align: center;
+    left: 0;
+    top: 25%;
+    font-size: 47px;
+    visibility: hidden;
+
+}
+.phimlist .phim-item .noidungphim{
+    width: 150px;
+    text-overflow: hidden;
+    padding-top: 15px;
+}
+.phim-item:hover a img{
+    transform: scale(1.1);
+    transition: 0.3s;
+    
+}
+.phim-item:hover .phim-icon{
+    visibility: visible;
+}
+.phim-item a img{
+    max-height: 211.68px;
+}
+.phim-item .noidungphim a{
+    text-decoration: none;
+    width: 100%;
+   
+}
+.phim-item a h3{
+    font-size: 15px;
+    color: var(--orange-color) ;
+    text-overflow: ellipsis;
+    display: block;
+}
+.phim-item a p{
+    color: var(--text-color);
+    text-overflow: hidden;
+    display: block;
+    font-size: 13px;
+    
+}
+.danhGiaPhim{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.danhGiaPhim a{
+    display: flex;
+    
+}
+.danhGiaPhim a i{
+    color: #febb00;
+    padding-right: 5px;
+}
+.danhGiaPhim .rate{
+    display: block;
+    color: #febb00;
+    padding:auto;
+}
+.phimchieurap-right{
+   
+    width: 100%;
+    height: 700px;
+    overflow: scroll black;
+    overflow-x: hidden;
+    margin-top: 10px;
+}
+/* sửa thanh cuộn cho đẹp */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 5px;
+}
+.phimchieurap-right .phimlist .phim-item{
+    padding: 10px 0;
+}
+.phim18{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
